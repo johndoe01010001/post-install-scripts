@@ -1,0 +1,6 @@
+{
+    "device": "alsa_output.pci-0000_0a_00.1.hdmi-stereo",
+    "device-description": "Navi 48 HDMI/DP Audio Controller Digital Stereo (HDMI)",
+    "device-profile": "HDMI / DisplayPort",
+    "preset-name": "edifier r1280t"
+}

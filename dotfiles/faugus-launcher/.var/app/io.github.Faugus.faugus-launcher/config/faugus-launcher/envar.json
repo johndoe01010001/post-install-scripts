@@ -1,0 +1,7 @@
+[
+    "PROTON_DXVK_LOWLATENCY=1",
+    "PROTON_VKD3D_LOWLATENCY=1",
+    "LOW_LATENCY_LAYER_REFLEX=1",
+    "DXVK_CONFIG=\"dxgi.hideAmdGpu = True\"",
+    "PROTON_FORCE_NVAPI=1"
+]

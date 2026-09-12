@@ -1,0 +1,420 @@
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+	// Extensions
+	"auto_install_extensions": {
+		// Dev Support
+		"tsgo": true,
+		"html": true,
+		"csharp": true,
+		"lua": true,
+		"dockerfile": true,
+		"docker-compose": true,
+		"ssh-config": true,
+		"fish": true,
+		"git-firefly": true,
+		"latex": true,
+		"make": true,
+		"sql": true,
+
+		// Markup Language and Data Formats Syntax Support
+		"csv": true,
+		"yaml": true,
+		"toml": true,
+		"xml": true,
+		"typst": true,
+		"mermaid": true,
+		"markdownlint": true,
+
+		// Snippets
+		"python-snippets": true,
+		"react-typescript-snippets": true,
+		"javascript-snippets": true,
+		"emmet": true,
+
+		// MCP Servers
+		"chrome-devtools-mcp": true,
+		"mcp-server-playwright": true,
+		"mcp-server-context7": true,
+		"mcp-server-sequential-thinking": true,
+		"mcp-server-code-runner": true,
+		"mcp-server-github": true,
+
+		// Theming
+		"charmed-icons": true,
+		"catppuccin": true,
+		"aura-theme": true,
+
+		// Miscellaneous
+		"codebook": true,
+		"live-server": true,
+		"env": true,
+	},
+
+	// Theming/Customization
+	"text_rendering_mode": "platform_default",
+	"buffer_font_family": "JetBrainsMono Nerd Font",
+	"icon_theme": "Base Charmed Icons",
+	"ui_font_family": "Noto Sans",
+	"ui_font_weight": 400.0,
+	"buffer_font_weight": 400.0,
+	"ui_font_size": 16.0,
+	"buffer_font_size": 14.0,
+	"theme": "Aura Dark",
+	"cursor_blink": false,
+	"colorize_brackets": true,
+	"outline_panel": { "default_width": 300 },
+	"file_finder": { "modal_max_width": "large" },
+	"tabs": { "file_icons": true },
+	"minimap": { "show": "never" },
+	"collaboration_panel": { "button": false },
+	"preview_tabs": { "enabled": false },
+	"tab_bar": { "show": true },
+
+	"project_panel": {
+		"dock": "right",
+		"default_width": 400,
+		"hide_root": false,
+		"auto_fold_dirs": false,
+		"starts_open": false,
+	},
+
+	"indent_guides": {
+		"enabled": true,
+		"coloring": "indent_aware",
+	},
+
+	"toolbar": {
+		"breadcrumbs": true,
+		"quick_actions": false,
+		"selections_menu": false,
+	},
+
+	"theme_overrides": {
+		"Aura Dark": {
+			"syntax": {
+				"comment": { "font_style": "italic" },
+				"comment_doc": { "font_style": "italic" },
+			},
+		},
+	},
+
+	// Hotkeys
+	"base_keymap": "VSCode",
+	"helix_mode": true,
+	"vim_mode": false,
+
+	// Formatting
+	"hard_tabs": true,
+	"format_on_save": "on",
+	"tab_size": 4,
+	"auto_indent": "syntax_aware",
+	"auto_indent_on_paste": false,
+	"current_line_highlight": "none",
+	"lsp_document_colors": "inlay",
+	"show_whitespaces": "none",
+	"remove_trailing_whitespace_on_save": true,
+	"preferred_line_length": 75,
+	"soft_wrap": "bounded",
+	"show_wrap_guides": false,
+
+	"autosave": {
+		"after_delay": { "milliseconds": 1000 },
+	},
+
+	"inlay_hints": {
+		"enabled": true,
+		"show_other_hints": true,
+		"show_parameter_hints": true,
+		"show_type_hints": true,
+		"show_value_hints": true,
+	},
+
+	// Prefences
+	"disable_ai": false,
+	"relative_line_numbers": "enabled",
+	"horizontal_scroll_margin": 1,
+	"vertical_scroll_margin": 3,
+	"when_closing_with_no_tabs": "keep_window_open",
+	"restore_on_file_reopen": false,
+	"close_on_file_delete": true,
+	"restore_on_startup": "last_workspace",
+	// "code_lens": "on",
+	// "show_signature_help_after_edits": true,
+	// "auto_signature_help": true,
+
+	"search": {
+		"include_ignored": true,
+		"case_sensitive": false,
+		"center_on_match": true,
+	},
+
+	"session": {
+		"restore_unsaved_buffers": false,
+		"trust_all_worktrees": true,
+	},
+
+	"diagnostics": {
+		"button": true,
+		"include_warnings": true,
+		"inline": { "enabled": true },
+	},
+
+	"git": {
+		"inline_blame": { "enabled": false },
+	},
+
+	// Miscellaneous
+
+	"telemetry": {
+		"diagnostics": false,
+		"metrics": false,
+		"anthropic_retention": false,
+	},
+
+	// "which_key": {
+	// 	"delay_ms": 200,
+	// 	"enabled": true,
+	// },
+
+	// LSP Settings
+	"lsp": {
+		"tinymist": {
+			"initialization_options": {
+				"preview": {
+					"background": { "enabled": true },
+				},
+			},
+			"settings": { "exportPdf": "onType" },
+		},
+	},
+
+	// Agent Providers
+	"agent_servers": {
+		"codex-acp": {
+			"default_config_options": {
+				"reasoning_effort": "medium",
+			},
+			"type": "registry",
+		},
+		"opencode": {
+			"default_config_options": {
+				"mode": "plan",
+			},
+			"type": "registry",
+		},
+		"claude-acp": {
+			"type": "registry",
+		},
+	},
+
+	// Agent Config
+	"agent": {
+		"play_sound_when_agent_done": "always",
+		"enable_feedback": false,
+		"profiles": {
+			"ask": {
+				"name": "Ask",
+				"tools": {
+					"create_thread": true,
+					"diagnostics": true,
+					"ask_user": false,
+					"fetch": true,
+					"list_agents_and_models": true,
+					"list_directory": true,
+					"find_path": true,
+					"find_references": true,
+					"get_code_actions": true,
+					"go_to_definition": true,
+					"read_file": true,
+					"grep": true,
+					"skill": true,
+					"spawn_agent": true,
+					"search_web": true,
+				},
+				"enable_all_context_servers": false,
+				"context_servers": {
+					"mcp-server-code-runner": {
+						"tools": {
+							"run-code": true,
+						},
+					},
+					"chrome-devtools-mcp-zed": {
+						"tools": {
+							"wait_for": true,
+							"upload_file": true,
+							"type_text": true,
+							"take_snapshot": true,
+							"take_screenshot": true,
+							"take_heapsnapshot": true,
+							"select_page": true,
+							"resize_page": true,
+							"performance_stop_trace": true,
+							"press_key": true,
+							"performance_start_trace": true,
+							"performance_analyze_insight": true,
+							"new_page": true,
+							"navigate_page": true,
+							"list_pages": true,
+							"list_network_requests": true,
+							"list_console_messages": true,
+							"lighthouse_audit": true,
+							"hover": true,
+							"handle_dialog": true,
+							"get_network_request": true,
+							"get_console_message": true,
+							"fill_form": true,
+							"fill": true,
+							"evaluate_script": true,
+							"emulate": true,
+							"drag": true,
+							"close_page": true,
+							"click": true,
+						},
+					},
+					"mcp-server-playwright": {
+						"tools": {
+							"browser_wait_for": true,
+							"browser_type": true,
+							"browser_take_screenshot": true,
+							"browser_tabs": true,
+							"browser_snapshot": true,
+							"browser_select_option": true,
+							"browser_run_code_unsafe": true,
+							"browser_resize": true,
+							"browser_press_key": true,
+							"browser_network_requests": true,
+							"browser_network_request": true,
+							"browser_navigate_back": true,
+							"browser_navigate": true,
+							"browser_hover": true,
+							"browser_handle_dialog": true,
+							"browser_find": true,
+							"browser_fill_form": true,
+							"browser_file_upload": true,
+							"browser_evaluate": true,
+							"browser_drop": true,
+							"browser_drag": true,
+							"browser_console_messages": true,
+							"browser_close": true,
+							"browser_click": true,
+						},
+					},
+					"mcp-server-context7": {
+						"tools": {
+							"resolve-library-id": true,
+							"query-docs": true,
+						},
+					},
+				},
+			},
+		},
+		"default_model": {
+			"provider": "lmstudio",
+			"model": "google/gemma-4-12b-qat",
+			"enable_thinking": false,
+		},
+		"tool_permissions": {
+			"tools": {
+				"search_web": {
+					"default": "allow",
+				},
+				"terminal": {
+					"always_allow": [
+						{
+							"pattern": "^ls\\b",
+						},
+						{
+							"pattern": "^grep\\b",
+						},
+						{
+							"pattern": "^find\\b",
+						},
+						{
+							"pattern": "^grep\\b",
+						},
+						{
+							"pattern": "^tail\\b",
+						},
+						{
+							"pattern": "^wc\\b",
+						},
+						{
+							"pattern": "^zed\\b",
+						},
+						{
+							"pattern": "^cat\\b",
+						},
+					],
+				},
+			},
+		},
+		"default_profile": "write",
+		"button": true,
+		"sidebar_side": "right",
+		"dock": "right",
+		"favorite_models": [
+			{
+				"provider": "lmstudio",
+				"model": "google/gemma-4-e4b",
+				"enable_thinking": false,
+			},
+			{
+				"provider": "lmstudio",
+				"model": "google/gemma-4-12b-qat",
+				"enable_thinking": false,
+			},
+		],
+		"model_parameters": [],
+	},
+
+	// MCP Configs
+	"context_servers": {
+		"mcp-server-brave-search": {
+   "enabled": true,
+			"remote": false,
+			"settings": {
+				"brave_api_key": "",
+			},
+		},
+		"mcp-server-kubernetes": {
+   "enabled": false,
+			"remote": false,
+			"settings": {},
+		},
+		"chrome-devtools-mcp-zed": {
+   "enabled": true,
+			"remote": false,
+			"settings": {
+				"browser_url": null,
+				"ws_endpoint": null,
+				"ws_headers": null,
+				"auto_connect": null,
+				"channel": null,
+				"headless": null,
+				"isolated": null,
+				"user_data_dir": null,
+				"viewport": null,
+				"executable_path": null,
+				"chrome_arg": [],
+				"proxy_server": null,
+				"accept_insecure_certs": null,
+				"category_emulation": null,
+				"category_performance": null,
+				"category_network": null,
+				"log_file": null,
+				"extra_args": [],
+			},
+		},
+		"postman": {
+   "enabled": false,
+			"remote": false,
+			"settings": {
+				"postman_api_key": "",
+				"toolset": "minimal",
+				"telemetryEnabled": false,
+			},
+		},
+	},
+}
